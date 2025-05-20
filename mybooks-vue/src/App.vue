@@ -18,13 +18,13 @@
             </svg>
           </button>
           
-          <!-- Navegación para pantallas medianas y grandes -->
-          <div class="hidden md:flex space-x-6 text-sm font-medium">
+          <!-- Navegación para pantallas medianas y grandes -->          <div class="hidden md:flex space-x-6 text-sm font-medium">
             <router-link to="/" class="hover:text-indigo-600">Inicio</router-link>
             <router-link to="/library" class="hover:text-indigo-600">Agregar Libros</router-link>
             <router-link to="/bookshelf" class="hover:text-indigo-600">Biblioteca</router-link>
             <router-link to="/wishlist" class="hover:text-indigo-600">Wishlist</router-link>
             <router-link to="/stats" class="hover:text-indigo-600">Estadísticas</router-link>
+            <router-link to="/bookstores" class="hover:text-indigo-600">Librerías Cercanas</router-link>
           </div>
         </div>
         
@@ -60,13 +60,19 @@
             @click="isMenuOpen = false"
           >
             Wishlist
-          </router-link>
-          <router-link 
+          </router-link>          <router-link 
             to="/stats" 
             class="block px-2 py-1 text-indigo-600 rounded hover:bg-indigo-50"
             @click="isMenuOpen = false"
           >
             Estadísticas
+          </router-link>
+          <router-link 
+            to="/bookstores" 
+            class="block px-2 py-1 text-indigo-600 rounded hover:bg-indigo-50"
+            @click="isMenuOpen = false"
+          >
+            Librerías Cercanas
           </router-link>
         </div>
       </div>
